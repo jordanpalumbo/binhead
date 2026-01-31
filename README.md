@@ -34,7 +34,7 @@ python binhead.py --help
 ## Usage
 
 ```bash
- python3 binhead <file> [options]
+ python3 -m binhead <file> [options]
 ```
 
 ### Common Examples
