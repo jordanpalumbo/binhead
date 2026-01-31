@@ -23,7 +23,7 @@
 Clone the repository and run directly with Python 3.10+:
 
 ```bash
-git clone https://github.com/yourname/binhead.git
+git clone https://github.com/jordanpalumbo/binhead.git
 cd binhead
 python binhead.py --help
 ```
