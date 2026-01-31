@@ -39,7 +39,7 @@ chmod +x binhead.py
 ## Usage
 
 ```bash
-binhead <file> [options]
+ python3 binhead <file> [options]
 ```
 
 ### Common Examples
