@@ -28,11 +28,6 @@ cd binhead
 python binhead.py --help
 ```
 
-(Optional) Make executable:
-
-```bash
-chmod +x binhead.py
-```
 
 ---
 
