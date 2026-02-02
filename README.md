@@ -69,7 +69,7 @@ Human-readable, formatted analysis for interactive use.
 Structured output suitable for scripting and automation:
 
 ```bash
-binhead sample.bin --entropy --hash sha256 --json
+python3 binhead.py sample.bin --entropy --hash sha256 --json
 ```
 
 ---
