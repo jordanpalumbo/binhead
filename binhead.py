@@ -249,6 +249,11 @@ def build_json_results(args, header: bytes):
 #----MAIN----
 def main():
     args = parse_arguments()
+    analysis_flags = any([
+        args.magic,
+        args.entropy,
+        args.hash
+    ])
 
     try:
         header = read_header(args.file, args.size)
@@ -280,8 +285,8 @@ def main():
         if args.hex:
             output += section("Hex Dump")
             output += hex_dump(header) + "\n"
-        elif not args.magic:
-            output += hex_dump(header) + "\n"
+        elif not analysis_flags and not args.hex:
+            output += section("Decoded Header")
             output += decode_header(header, args.encoding)
 
         write_output(output, args.out, args.tee)
@@ -298,3 +303,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
