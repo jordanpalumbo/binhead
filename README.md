@@ -41,19 +41,19 @@ python binhead.py --help
 
 ```bash
 # Identify file type and entropy
-binhead sample.exe --magic --entropy
+python3 -m binhead sample.exe --magic --entropy
 
 # Hash header using SHA-256 (default)
-binhead sample.bin --hash
+python3 -m binhead sample.bin --hash
 
 # Hash header using MD5
-binhead sample.bin --hash md5
+python3 -m binhead sample.bin --hash md5
 
 # Hex dump with JSON output
-binhead sample.bin --hex --json
+python3 -m binhead sample.bin --hex --json
 
 # Write output to a file and stdout
-binhead sample.bin --entropy --out report.txt --tee
+python3 -m binhead sample.bin --entropy --out report.txt --tee
 ```
 
 ---
